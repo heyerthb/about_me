@@ -2,13 +2,15 @@
 
 var userName=prompt('Welcome! My name is Matt, what\'s your name?');
     alert('Hi ' + userName + '! I\'m Matt, Welcome to the game of me! Let\'s get weird with it. Here\'s a guessing game about me that probably says more about you');
+var score = 0
 console.log('The user\'s name is ' + userName + 'alaya!');
 
 // var answerOne=prompt('Guess this about me: Did I have a class in high school where all we did was surf?')
 // .toLowerCase();
 // if(answerOne === 'y' || answerOne ==='yes'){
-//     alert ('You\'re correct ' + userName + 'money! Take a dab. We spent 0 period three days a week surfing before school for PE credit. #blessed')
-// console.log(userName + '-money got the correct answer to #1!')
+//     alert ('You\'re correct ' + userName + 'money! Take a dab. We spent 0 period three days a week surfing before school for PE credit. #blessed');
+       score++;
+// console.log(userName + '-money got the correct answer to #1!');
 // }else{
 //     alert('You lose ' + userName + '! My childhood was basically an episode of the OC, which they largely filmed in my hometown of Hermosa Beach, CA' + '! This is going to be a long game for you.');
 // console.log(userName + '-town is bad and should feel bad');
@@ -79,7 +81,8 @@ while(numberOfGuesses > 0){
 
 var favoriteFoods = ['Spaghetti', 'Breakfast Burrito', 'Sushi', 'Tacos', 'Larb', 'Pineapple', 'Chili', 'Bad Chinese', 'Calamari', 'Dark Chocolate' ];
 var numberOfAttempts = 6;
-
+// var xxx= []
+// for(var i = 0; i < xxx.length; i++){if answerSeven === xxx[i]}alert('you got it')
 prompt('Hey, ' + userName + '. Can you guess one of my favorite foods?');
-console.log(favoriteFoods);
-return favoriteFoods();
+    console.log(favoriteFoods);
+    return favoriteFoods();
