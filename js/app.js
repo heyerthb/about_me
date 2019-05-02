@@ -1,7 +1,7 @@
-// 'use strict';
+'use strict';
 
 var userName=prompt('Welcome! My name is Matt, what\'s your name?');
-    alert('Hi ' + userName + '-town! I\'m Matt. Welcome to ME! Let\'s get weird with it. Here\'s a guessing game about me that probably says more about you');
+    alert('Hi ' + userName + '! I\'m Matt, Welcome to the game of me! Let\'s get weird with it. Here\'s a guessing game about me that probably says more about you');
 console.log('The user\'s name is ' + userName + 'alaya!');
 
 // var answerOne=prompt('Guess this about me: Did I have a class in high school where all we did was surf?')
@@ -34,95 +34,52 @@ console.log('The user\'s name is ' + userName + 'alaya!');
 //     console.log(userName + ' for the win!! but not actually')
 // }
 
-var answerFour=prompt('Ok, Ok. Humble brag time ' + userName + '. Can you believe that Russel Wilson knows who I am?')
-.toLowerCase();
-if(answerFour === 'y' || answerFour === 'Yes'){
-    alert('Mic drop. Yes he does. When he was drafted by the Hawks he came into my bar. Even after I moved restaurants, whenever I saw him he remembered my name. He\'s good people')
-console.log(userName + ' believes in my truth and I am grateful.')
-}else{
-    alert('I said \'Humble Brag\', you\'d think that would clue you in ' + userName + '. When he was drafted by the Hawks he came into my bar. Even after I moved restaurants, whenever I saw him he remembered my name. He\'s good people')
-    console.log(userName + ' for the win!! but not actually, but closer!')
-}
+// var answerFour=prompt('Ok, Ok. Humble brag time ' + userName + '. Can you believe that Russel Wilson knows who I am?')
+// .toLowerCase();
+// if(answerFour === 'y' || answerFour === 'Yes'){
+//     alert('Mic drop. Yes he does. When he was drafted by the Hawks he came into my bar. Even after I moved restaurants, whenever I saw him he remembered my name. He\'s good people')
+// console.log(userName + ' believes in my truth and I am grateful.')
+// }else{
+//     alert('I said \'Humble Brag\', you\'d think that would clue you in ' + userName + '. When he was drafted by the Hawks he came into my bar. Even after I moved restaurants, whenever I saw him he remembered my name. He\'s good people')
+//     console.log(userName + ' for the win!! but not actually, but closer!')
+// }
 
-var answerFive=prompt('Hey ' + userName + ', do you want to hear me sing?')
-.toLowerCase();
-if(answerFive === 'y' || answerFive === 'Yes'){
-    alert('Well ' + userName + ', I may literally have the worst singing voice in this whole wide world. Why are you trying to embarass me? Rude.')
-console.log(userName + ' knows shockingly little about me.')
-}else{
-    alert(userName + ". On a serious note, you may have saved your life and everybody around you. You my friend, are a saint.")
-    console.log(userName + ' is not a fan of my singing voice.')
-}
-
+// var answerFive=prompt('Hey ' + userName + ', do you want to hear me sing?')
+// .toLowerCase();
+// if(answerFive === 'y' || answerFive === 'Yes'){
+//     alert('Well ' + userName + ', I may literally have the worst singing voice in this whole wide world. Why are you trying to embarass me? Rude.')
+// console.log(userName + ' knows shockingly little about me.')
+// }else{
+//     alert(userName + ". On a serious note, you may have saved your life and everybody around you. You my friend, are a saint.")
+//     console.log(userName + ' is not a fan of my singing voice.')
 
 
 
-// // var sandwichName = prompt('HEY KID!!! What is your favorite sandwich?');
+
+var numberOfGuesses = 4;
+while(numberOfGuesses > 0){
         
-// // alert(sandwichName +'? Really?? ' + sandwichName + ' is gross!!');
-// // // var yourName = prompt("What's your name " + sandwichName + " sandwich?");
-// // // alert("you're kinda creepy " + yourName + ".");
-// // // var favoriteDrink = prompt("Ok " + yourName + ". Along with your " + sandwichName + " sandwich, what do you like to drink?");
-// // // alert( favoriteDrink + "? It's hard to believe I thought we could make this work " + yourName + ". Between your preference of " + sandwichName + " sandwiches that you wash down with " + favoriteDrink + "; I'm not sure it's going to work out between us.");
-// // // var isItTrue = prompt("One last question..." + yourName + " of the " + sandwichName + " sandwich, who inexplicably drinks " + favoriteDrink +". Is it true what they say?"); 
-// // // alert("I believe you. Alas, two ships passing in the night I guess " + yourName + ". Enjoy your " + sandwichName + " sandwich and warm " + favoriteDrink + " on your long journey. To answer the question you must be asking yourself..." + isItTrue);
-// // // console.log ('The user said thier favorite sandwich is ' + sandwichName + '. Thier favorite drink is ' + favoriteDrink + '. Thier name is ' + yourName + '. And when asked it it were true they responded by saying "' + isItTrue + '".');               
+    var answerSix = Number(prompt('Sooo... ' + userName + ', despite everything that\'s happened on our journey, I feel closer to you now. On a scale of 1 to 10, guess how much I like you'));
+    numberOfGuesses--;
+    if (answerSix > 5){
+        alert('Nope! Too high, try again!');
+    }
+    if(answerSix < 5){
+        alert('Nope! Too low, try again!');
+    }
+       if(answerSix === 5){
+        alert('Clearly you cheated ' + userName + '. Is this just how you get through life?'); 
+        break;  
+    }  
+    if(numberOfGuesses === 0){
+        alert('Nevermind ' + userName + ', you\'re embarrassing yourself!');
+    }  
+}
+// As a developer, I want to add a seventh question to my guessing game that has multiple possible correct answers that are stored in an array (for instance, “Can you guess a state that I have lived in besides Washington?”), so that even more of my programming skills are showcased. For now, I will structure this question so that the user has six tries to get a single correct answer, and upon using up those tries OR getting a correct answer, displays a message to the user indicating all of the possible correct answers.
 
+var favoriteFoods = ['Spaghetti', 'Breakfast Burrito', 'Sushi', 'Tacos', 'Larb', 'Pineapple', 'Chili', 'Bad Chinese', 'Calamari', 'Dark Chocolate' ];
+var numberOfAttempts = 6;
 
-// // // I need 5 yes/no questions about myself. 
-// // // 1. My first job was as a butler at the Playboy Mansion. No, it was my fourth. No follow up questions, they make you sign an NDA.
-// // // 2. One of my courses in highschool was surf class. Yes, we met at the beach to go surfing three times a week for 0 Period for PE credit. 
-// // // 3. My primary motivation for attending law school was rage. Yes. 
-// // // 4. My dogs names are Woodford and Cider. Yes, named after my wife and I's drinks of choice.
-// // // 5. I 
-
-
-// // var createGreeting = function (username) {
-// //     // var hour = 21;
-// //     var date = new Date();
-// //     var hour = date.getHours()
-// //   // if it's noon or later, and before 5 pm, construct "Good afternoon, Stephanie"
-// //     if (hour > 0 && hour < 12) {
-// // //       var newGreeting = "Good morning, " + username + "!";
-// // //     } else if (hour >= 12 && hour < 17) {
-// // //       var newGreeting = "Good afternoon, " + username + "!";
-// //     } else {
-// //       var newGreeting = "Good night, " + username + "!";    
-// //     }
-  
-// //     return newGreeting;
-// //   };
-  
-// //   var greeting = createGreeting("Josh");
-// //   console.log(greeting); 
-
-// // var surfClass = prompt('One of my courses in highschool was surf class?').toLowerCase();
-// // if (surfClass === 'true'){
-// //     alert ('We spent 0 period three days a week surfing before school of PE credit. #blessed');
-// // }
-// // else if (surfClass === 'false') {
-// //      alert('Incorrect! My childhood was basically an episode of the OC, which they largely filmed in my hometown of Hermosa Beach, CA');
-// // }
-// // else {
-// //      surfClass= alert('must return either TRUE, or FALSE');
-// // //     //  prompt('One of my courses in highschool was surf class?');
-// //     while (surfClass !== 'true' surfClass !== 'false') {'must reutrn either TRUE or FALSE'
-// //     prompt('One of my courses in highschool was surf class?').toLowerCase();
-// // }
-// // console.log ('User believes that is ' + surfClass + ' that I had surf class in high school' )
-
-// // var dogNames = prompt('My wife and I named our dogs after our preferred alocoholic beverages?').toLowerCase();
-// // if (dogNames === 'true'){
-// //     alert ('We spent 0 period three days a week surfing before school of PE credit. #blessed');
-// // }
-// // else if (surfClass === 'no') {
-// //      alert('Incorrect! My childhood was basically an episode of the OC, which they largely filmed in my hometown of Hermosa Beach, CA');
-// // }
-// // else {
-// //      surfClass= alert('must return either YES, or NO');
-
-
-
-
-
-// //  else {'must return an answer of \'\true'\'\false'\'\yes'\'\no'}
+prompt('Hey, ' + userName + '. Can you guess one of my favorite foods?');
+console.log(favoriteFoods);
+return favoriteFoods();
